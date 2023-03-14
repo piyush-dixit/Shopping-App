@@ -1,38 +1,336 @@
-.App {
+.container{
+  color: rgb(4, 0, 255);
+}
+/* div {
+  background-color: #f73f07;
+} */
+.categari{
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #9e5cb3;
+color: rgba(2, 61, 253, 0.973);
+
+}
+.but{
+  color: #f5e506;
+}
+.logout{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.welcome{
+  text-align: center;
+  color:rgb(10, 14, 247);
+}
+.add{
+  text-align: center;
+}
+.cart{
+  color: rgb(234, 238, 11);
+  text-align:inherit;
+  /* background-color: rgba(228, 2, 248, 0.719); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.login{
+  background-color:rgb(227, 252, 0);
+}
+.register{
+  background-color:rgb(235, 252, 0)
+}
+.homepage{
+  display: grid;
+  grid-template-columns: auto;
+  color :#ebfc04;
+  background-color: #0818f5;
+}
+
+.navy{
+  color: rgb(230, 216, 30);
+  background-color: #045bfc;
+ 
+}
+.striky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.setpassword{
+  text-align: center;
+  padding : 19%;
+
+}
+.btn-change6{
+  text-align: center;
+  height: 0%;
+  width: 40%;
+  background: rgb(22, 6, 240);
+  padding: 2%;
+  font-size: 20px;
+  margin: 30%;
+  float: center;
+  border-radius: 15px;
+  border:10px;
+  color:#ffffffce;
+  box-shadow: 0 0 1px #07edf5;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  box-shadow:0px 0 0 #31708f  inset;
+}
+.btn-change6:hover{
+  box-shadow:0 0 0 25px #f4f805  inset;
+  -webkit-transform: scale(1);
+}
+   /* .cardImg:hover {
+    animation: shake 0.5s;
+
+
+    animation-iteration-count: infinite;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  } */
+  /* login start and orders button */
+  .button {
+    border-radius: 17px;
+    background-color: #e2f109;
+    border: none;
+    color: #2703f7;
+    text-align: center;
+    font-size: 15px;
+    padding: 5%;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
   }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .pic{
+    background-image: url("https://img.freepik.com/premium-photo/beautiful-young-woman-with-shopping-bags-using-her-smart-phone-yellow-background_50889-43.jpg");
+ 
+    background-repeat: repeat-x;
+    width: 100%;
+    image-rendering :auto;
+  
+    }
+   .size{
+    height: 220px;
+   }
+   /* home page css */
+   .card {
+    background-color: #8deef1;
+    text-align: center;
+    align-content: center;
+     display: flexbox; 
+    -moz-box-align: center;
+    box-shadow: 0 9px 16px 0 rgba(238, 221, 72, 0.548);
+    transition: 0.3s;
+   width: 40%;
+   
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.938);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  body{
+    box-align: center;
+  }
+
+  /*  All Catagiry css*/
+  .cardcat {
+    box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 4%;
+    transition: 0.3s;
+  }
+  
+  .price {
+    color: rgb(5, 82, 248);
+    font-size: 22px;
+  }
+  
+  .cardcat button {
+    /* border: none; */
+    outline: 0;
+    padding: 12px;
+    color: rgb(199, 221, 76);
+    background-color: #072af0;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+  }
+  
+  .cardcat :hover {
+    opacity: 0.7;
+    box-shadow: 0 8px 16px 0 rgba(62, 192, 45, 0.938);
+  }
+
+  /* home page css2 */
+ 
+
+body {
+  background-color: #99eaf8;
+  
+}
+
+.wrapper {
+  height: 420px;
+  width: 654px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 370px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #2ed891;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #021af5;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ff0000;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #0602f7;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #d6fa07;
+}
+
+span {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 85%;
+  width: 85%;
+  margin: 0 40px 0 16px;
+  /* box-sizing: border-box; */
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #e8f802;
+  background-color: #3023eb;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #043df8;
+}
+.wrapper:hover{
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.2);
 }
