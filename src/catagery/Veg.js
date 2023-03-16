@@ -10,7 +10,7 @@ import Veg4 from "/home/piyush/shopping-app/src/Photos/veg4.jpeg"
 export default function Veg() {
   const Dispatch = useDispatch();
   const add=localStorage.getItem("additem")
-  const[count,Setcount]=useState(+add)
+  const[count,Setcount]=useState(0)
 
 
   const additem=()=>{
@@ -29,12 +29,12 @@ export default function Veg() {
   return (
     <>
     
-  <h2 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Chosse Your Items</h2>
+  <h2 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Choose Items</h2>
   <hr />
   <body>
 <div className="cardcat" style={{backgroundColor:'yellow'}}>
   <img src={Veg1} alt="Denim Jeans" style={{width:"100%"}}/>
-  <h1>Tommato</h1>
+  <h1>Tomato</h1>
   <p className="price">$19.99</p>
  <p><button onClick={additem}>Add to Cart</button></p>
  <button onClick={removeitem}>Remove Item</button>
@@ -45,7 +45,7 @@ export default function Veg() {
 <body>
 <div className="cardcat" style={{backgroundColor:'yellow' }}>
   <img src={Veg2} alt="Denim Jeans" style={{width:"100%"}}/>
-  <h1>Brocolli</h1>
+  <h1>Broccoli</h1>
   <p className="price">$19.99</p>
   <p><button onClick={additem}>Add to Cart</button></p>
   <button onClick={removeitem}>Remove Item</button>

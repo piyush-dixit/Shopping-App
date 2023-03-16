@@ -13,7 +13,7 @@ export default function  Ice() {
  
     const Dispatch = useDispatch();
     const ss2=localStorage.getItem("additem")
-    const [count,Setcount]=useState(+ss2);
+    const [count,Setcount]=useState(0);
     
 
     const additem=()=>{
@@ -33,7 +33,7 @@ export default function  Ice() {
    
   return (
     <>
-<h2 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Chosse Your Items</h2>
+<h2 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Choose Items</h2>
   <hr />
   <body>
 <div className="cardcat" style={{backgroundColor:'yellow'}}>
@@ -41,7 +41,7 @@ export default function  Ice() {
   <h1>Cone</h1>
   <p className="price">1 Item = $19.99/-</p>
  <p><button   onClick={additem} >Add to Cart</button></p>
- <button onClick={removeitem}>remove item</button>
+ {/* <button onClick={removeitem}>remove item</button> */}
 </div>
 </body>
 <hr />
@@ -51,7 +51,7 @@ export default function  Ice() {
   <h1>Pink Cone</h1>
   <p className="price">1 Item = $19.99/-</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>remove item</button>
+  {/* <button onClick={removeitem}>remove item</button> */}
 </div>
 </body>
 <hr />
@@ -61,7 +61,7 @@ export default function  Ice() {
   <h1>Chocolate</h1>
   <p className="price">1 Item = $19.99/-</p>
  <p><button onClick={additem}>Add to Cart</button></p>
- <button onClick={removeitem}>remove item</button>
+ {/* <button onClick={removeitem}>remove item</button> */}
 </div>
 </body>
 <hr />
@@ -71,7 +71,7 @@ export default function  Ice() {
   <h1>Vanilla</h1>
   <p className="price">1 Item = $19.99/-</p>
 <p><button onClick={additem}>Add to Cart</button></p>
-<button onClick={removeitem}>remove item</button>
+{/* <button onClick={removeitem}>remove item</button> */}
 </div>
 </body>
 

@@ -11,7 +11,7 @@ import { Addcart } from '../Store/Info'
 export default function Friut() {
   const Dispatch=useDispatch();
   const add=localStorage.getItem("additem")
-  const[count,Setcount]=useState(+add)
+  const[count,Setcount]=useState(0)
 
 
   const additem=()=>{
@@ -29,7 +29,7 @@ localStorage.setItem("additem",count)
   }
   return (
     <>
-  <h2 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Chosse Your Items</h2>
+  <h2 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Choose Items</h2>
   <hr />
   <body>
 <div className="cardcat" style={{backgroundColor:'yellow'}}>
@@ -37,17 +37,17 @@ localStorage.setItem("additem",count)
   <h1>Apple</h1>
   <p className="price">Price/Kg = $19.99/-</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 </div>
 </body>
 <hr />
 <body>
 <div className="cardcat" style={{backgroundColor:'yellow' }}>
   <img src={fruit2} alt="Denim Jeans" style={{width:"100%"}}/>
-  <h1>Graps</h1>
+  <h1>Grapes</h1>
   <p className="price">Price/Kg = $19.99/-</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>
@@ -55,10 +55,10 @@ localStorage.setItem("additem",count)
 <body>
 <div className="cardcat" style={{backgroundColor:'yellow'}}>
   <img src={fruit3} alt="Denim Jeans" style={{width:"100%"}}/>
-  <h1>Straberry</h1>
+  <h1>Strawberry</h1>
   <p className="price">Price/Kg = $19.99/-</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>
@@ -69,7 +69,7 @@ localStorage.setItem("additem",count)
   <h1>PineApple</h1>
   <p className="price">Price/Kg = $19.99/-</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>

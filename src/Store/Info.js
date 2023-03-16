@@ -7,7 +7,9 @@ export const PersonSlice = createSlice({
     initialState :{
         email : " ",
         password :" ",
-        addtocart:0
+        addtocart:0,
+        name:" ",
+        address:" "
     },
     reducers:{
         AddEmail:(state, action)=>{
@@ -19,9 +21,15 @@ export const PersonSlice = createSlice({
         },
         Addcart:(state, action)=>{
             state.addtocart=action.payload;
+        },
+        Addname:(state, action)=>{
+            state.name=action.payload;
+        },
+        Addaddress:(state, action)=>{
+            state.address=action.payload;
         }
     },
 })
 export default PersonSlice.reducer;
   
-export const {AddEmail,AddPassword,Addcart} = PersonSlice.actions;
+export const {AddEmail,AddPassword,Addcart,Addname,Addaddress} = PersonSlice.actions;

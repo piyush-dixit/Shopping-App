@@ -1,10 +1,31 @@
 import React from 'react'
-import frt from "/home/piyush/shopping-app/src/Photos/fruitshome.jpg"
-import veg from "/home/piyush/shopping-app/src/Photos/veg.jpg"
+import frt from "/home/piyush/shopping-app/src/Photos/frt1.jpg"
+import veg from "/home/piyush/shopping-app/src/Photos/foood.jpg"
 import food from "/home/piyush/shopping-app/src/Photos/fd2.jpg"
-import ice from "/home/piyush/shopping-app/src/Photos/creame2.jpeg"
+
+import ice from "/home/piyush/shopping-app/src/Photos/ice2.jpeg"
+import swip1 from "/home/piyush/shopping-app/src/Photos/swip1.jpg"
+import swip2 from "/home/piyush/shopping-app/src/Photos/swip2.jpg"
+import swip3 from "/home/piyush/shopping-app/src/Photos/swip6.jpg"
+import swip4 from "/home/piyush/shopping-app/src/Photos/swip4.jpg"
+import swip5 from "/home/piyush/shopping-app/src/Photos/swip5.jpeg"
 import { Link } from 'react-router-dom'
+// Import Swiper React components
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import './swiper.css'
+import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 import {useNavigate} from 'react-router-dom';
+
+
+
+
+
+
+
 
 export default function HomePage() {
     const navigate=useNavigate()
@@ -16,8 +37,7 @@ else{
     alert("You need a Create Account or Login")
     navigate("/Login")
 }
-
-    }
+}
     const checkloginfriut=()=>{
         if(localStorage.getItem("logincheck")!==null){
                         navigate("/Friut")
@@ -48,14 +68,72 @@ else{
                         }
                         
                             }
+                          // swiper code functions
+                          // 
 
-                            
+        const Body1=     () =>{
+          return (<body>
+               <div class="product-img">
+                <img src={swip1} height="350" width="400"/>
+              </div>
+             </body>)
+        }  
+        const Body2 =     () =>{
+          return (<body>
+               <div class="product-img">
+                <img src={swip2} height="350" width="400"/>
+              </div>
+             </body>)
+        } 
+        const Body3 =     () =>{
+          return (<body>
+               <div class="product-img">
+                <img src={swip3} height="350" width="400"/>
+              </div>
+             </body>)
+        } 
+        const Body4 =     () =>{
+          return (<body>
+               <div class="product-img">
+                <img src={swip4} height="350" width="400"/>
+              </div>
+             </body>)
+        } 
+        const Body5 =     () =>{
+          return (<body>
+               <div class="product-img">
+                <img src={swip5} height="350"  width="400"/>
+              </div>
+             </body>)
+        }               
   return (
     <>
-    {/* ,position: '-webkit-sticky',
-  position: 'sticky',
-  bottom: '0' */}
-<div >
+ {/* <h1 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Categories</h1> */}
+ {/*  Sllide Slower */}
+<Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={3}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    
+     >
+      <div className="swiperimg">
+      <SwiperSlide>{Body1}</SwiperSlide>
+      <SwiperSlide>{Body2}</SwiperSlide>
+      <SwiperSlide>{Body3}</SwiperSlide>
+      <SwiperSlide>{Body4}</SwiperSlide>
+      <SwiperSlide>{Body5}</SwiperSlide>
+      </div>
+
+      
+    </Swiper>
+{/* Home page card */}
+
 <h1 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Categories</h1>
 
 <body>
@@ -145,7 +223,7 @@ food, substance consisting essentially of protein, carbohydrate, fat, and other 
 
 </body>
          
- </div>
+ 
  </>
 
   )

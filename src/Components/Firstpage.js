@@ -9,13 +9,18 @@ const click=()=>{
 }
   return (
     <>
-    <body>
-      <div className="pic" >
-<div className="firstpage">
-    <button type="button"  onClick={click} class="btn-change6">Click Me For Start</button>
+   
+    {/* background-image: url("https://img.freepik.com/premium-photo/product-package-boxes-shopping-bag-cart-with-laptop-online-shopping-delivery-concept_38716-138.jpg"); */}
+      <div>
+{/* <div className="firstpage"> */}
+    {/* <button type="button"  onClick={click} class="btn-change6">Click Me For Start</button> */}
     </div>
-    </div>
-    </body>
+    {/* </div> */}
+    
+    <div  className="GeeksForGeeks">
+      <h1>GeeksForGeeks</h1>
+         <button type="button"  onClick={click} class="btn-change6">Click Me For Start</button> 
+      </div>
     </>
   )
 }
