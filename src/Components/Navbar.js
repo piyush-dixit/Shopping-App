@@ -20,7 +20,9 @@ const indb2=()=>{
   navigate("/Login")
 }
     const outdb=()=>{
-      alert("LogOut Sccessfully")
+      let text="Are you sure"
+      if(window. confirm(text))
+      // alert("LogOut Sccessfully")
         localStorage.clear();
         localStorage.removeItem("passwordData");
         navigate("/")

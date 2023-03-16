@@ -23,14 +23,14 @@ export default function Order() {
 if(Selector2!==0){
       Setcount(0) //count-count
       Dispatch(Addcart(0)) //count
-    // localStorage.setItem("additem",count)
+    localStorage.setItem("additem",count)
     if(Selector2===0)
         navigate("/")
         alert("Thanks for Shopping Your Order Will be Delivered")
 }
     else{
         navigate("/")
-        alert("Please Do Order first")
+        alert("Please Do Order")
 }
     }
   return (

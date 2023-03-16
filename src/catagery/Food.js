@@ -3,15 +3,17 @@ import food1 from "/home/piyush/shopping-app/src/Photos/food1.jpeg"
 import food2 from "/home/piyush/shopping-app/src/Photos/food2.jpeg"
 import food3 from "/home/piyush/shopping-app/src/Photos/food3.jpeg"
 import food4 from "/home/piyush/shopping-app/src/Photos/food4.jpeg"
+import { useDispatch ,useSelector} from 'react-redux';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux'
+// import { useDispatch } from 'react-redux'
 import { Addcart } from '../Store/Info';
 
 
 export default function Food () {
 const Dispatch=useDispatch()
+const Selector2 = useSelector(state=>state.Cart.addtocart);
   const ss=localStorage.getItem("additem")
-  const[count,Setcount]=useState(0);
+  const[count,Setcount]=useState(Selector2);
   localStorage.setItem("additem",count)
   const additem=()=>{
        Setcount(count+1)

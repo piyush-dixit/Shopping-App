@@ -4,7 +4,7 @@ import ice2 from "/home/piyush/shopping-app/src/Photos/ICE2.jpeg"
 import ice3 from "/home/piyush/shopping-app/src/Photos/ICE5.jpeg"
 import ice4 from "/home/piyush/shopping-app/src/Photos/ICE4.jpeg"
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch ,useSelector} from 'react-redux';
 import { Addcart } from '../Store/Info';
 
 
@@ -12,8 +12,9 @@ import { Addcart } from '../Store/Info';
 export default function  Ice() {
  
     const Dispatch = useDispatch();
+    const Selector2 = useSelector(state=>state.Cart.addtocart);
     const ss2=localStorage.getItem("additem")
-    const [count,Setcount]=useState(0);
+    const [count,Setcount]=useState(Selector2);
     
 
     const additem=()=>{

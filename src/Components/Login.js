@@ -11,8 +11,8 @@ const navigate=useNavigate()
     const [checkmail,SetNewmail]=useState('');
     const [checkpassword,SetNewpassword]=useState('');
      
-const warning=()=>{
-        
+const check=(event)=>{
+  event.preventDefault();
     if(checkmail===selector && checkpassword===PassSelector){
           // Setlogin(1)
       localStorage.setItem("logincheck","active")      
@@ -46,7 +46,7 @@ alert("wrong password or need to register")
     <label htmlFor="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" onChange={passwordsize} name="psw" required/>
 
-    <button type="submit" onClick={warning} className="btnbtn">Login</button> 
+    <button type="submit" onClick={check} className="btnbtn">Login</button> 
     <hr />
     <Link to="/ForgetPassword">Forget Password ?</Link>
     <Link to="/Register"  style={{margin:"13%"}}>Sign-Up</Link>

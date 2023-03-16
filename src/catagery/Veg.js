@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch ,useSelector} from 'react-redux';
 import { Addcart } from '../Store/Info'
 import Veg1 from "/home/piyush/shopping-app/src/Photos/veg1.jpeg"
 import Veg2 from "/home/piyush/shopping-app/src/Photos/veg2.jpeg"
@@ -9,8 +9,9 @@ import Veg4 from "/home/piyush/shopping-app/src/Photos/veg4.jpeg"
 
 export default function Veg() {
   const Dispatch = useDispatch();
+  const Selector2 = useSelector(state=>state.Cart.addtocart);
   const add=localStorage.getItem("additem")
-  const[count,Setcount]=useState(0)
+  const[count,Setcount]=useState(Selector2)
 
 
   const additem=()=>{
@@ -37,7 +38,7 @@ export default function Veg() {
   <h1>Tomato</h1>
   <p className="price">$19.99</p>
  <p><button onClick={additem}>Add to Cart</button></p>
- <button onClick={removeitem}>Remove Item</button>
+ {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>
@@ -48,7 +49,7 @@ export default function Veg() {
   <h1>Broccoli</h1>
   <p className="price">$19.99</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>
@@ -59,7 +60,7 @@ export default function Veg() {
   <h1>Potato</h1>
   <p className="price">$19.99</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>
@@ -70,7 +71,7 @@ export default function Veg() {
   <h1>ComboPack</h1>
   <p className="price">$19.99</p>
   <p><button onClick={additem}>Add to Cart</button></p>
-  <button onClick={removeitem}>Remove Item</button>
+  {/* <button onClick={removeitem}>Remove Item</button> */}
 
 </div>
 </body>

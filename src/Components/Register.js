@@ -20,7 +20,7 @@ export default function Register() {
     const [name,Setname]=useState(localStorage.getItem("nameData"));
     const [address,Setaddress]=useState(localStorage.getItem("addressData"));
    
-    const warning=(event)=>{
+    const check=(event)=>{
 event.preventDefault();
         if( checkpassword.length>=8 && name.length>4 && address.length>4 ) {
         if(checkmail.includes("@gmail.com")){
@@ -101,7 +101,7 @@ event.preventDefault();
     <label htmlFor="psw"><b>Password</b></label>
     <input type="password" placeholder="Includes all @$# ,lower-upper character" onChange={passwordsize} name="psw" required/>
 
-    <button type="submit" onClick={warning} className="btnbtnreg">Sign-up</button> 
+    <button type="submit" onClick={check} className="btnbtnreg">Sign-up</button> 
 
 </form>
 </div>

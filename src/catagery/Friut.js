@@ -5,13 +5,14 @@ import fruit3 from "/home/piyush/shopping-app/src/Photos/FRT3.jpeg"
 import fruit4 from "/home/piyush/shopping-app/src/Photos/FRT4.jpeg"
 import { useState } from 'react'
 import { Dispatch } from 'react'
-import { useDispatch } from 'react-redux'
+// import { useDispatch } from 'react-redux'
 import { Addcart } from '../Store/Info'
-
+import { useDispatch ,useSelector} from 'react-redux';
 export default function Friut() {
   const Dispatch=useDispatch();
+  const Selector2 = useSelector(state=>state.Cart.addtocart);
   const add=localStorage.getItem("additem")
-  const[count,Setcount]=useState(0)
+  const[count,Setcount]=useState(Selector2)
 
 
   const additem=()=>{
