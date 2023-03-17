@@ -9,7 +9,7 @@ Online food ordering/delivery through third-party companies have emerged as a gl
 ## Some ScreensShots of Related project-
 
 ### ScreenShot : 1
-This page is Registration page of this Project
+ Registration page of this Project
 <img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-50-02.png">
 
 ### ScreenShot : 2
