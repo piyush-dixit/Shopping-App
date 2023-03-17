@@ -8,61 +8,36 @@ Online food ordering/delivery through third-party companies have emerged as a gl
 
 ## Some ScreensShots of Related project-
 
-### `ScreenShot : 1
+### ScreenShot : 1
 This page is Registration page of this Project
 <img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-50-02.png">
 
-### SreenShot : 2
-This page is Login page of this Project
+### ScreenShot : 2
+
+ Login page of this Project
+<img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-49-55.png">
+
+
+### ScreenShot : 3
+
+Categories in Project
+<img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-49-37.png">
+
+
+### ScreenShot : 4
+
+Cetegories page II nd
+<img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-54-44.png">
 
 
 
-### `npm run build`
+## ScreenShot : 5
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Choose items Page in side Cetegories
+<img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-52-17.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ScreenShot : 6
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User's Final receipt 
+<img src="https://github.com/piyush-dixit/Shopping-App/blob/master/Screenshot%20from%202023-03-17%2014-55-04.png">
