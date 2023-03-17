@@ -10,7 +10,7 @@ Online food ordering/delivery through third-party companies have emerged as a gl
 
 ### `ScreenShot : 1
 This page is Registration page of this Project
-<img src="https://drive.google.com/file/d/1eOwKVRj-EvuychQkFResMBW-amwC2rAL/view?usp=share_link">
+<img src="https://drive.google.com/file/d/1ia06kaCmPyTy_JMYutJluRtiho8h3efO/view?usp=share_link">
 ### SreenShot : 2
 This page is Login page of this Project
 
