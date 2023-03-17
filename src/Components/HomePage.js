@@ -105,7 +105,8 @@ else{
                 <img src={swip5} height="350"  width="400"/>
               </div>
              </body>)
-        }               
+        }    
+        const d=  new Date().toLocaleString()           
   return (
     <>
  {/* <h1 style={{textAlign:'center',color:'blue',backgroundColor:'yellow'}}>Categories</h1> */}

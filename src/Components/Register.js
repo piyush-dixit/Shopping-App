@@ -23,7 +23,7 @@ export default function Register() {
     const check=(event)=>{
 event.preventDefault();
         if( checkpassword.length>=8 && name.length>4 && address.length>4 ) {
-        if(checkmail.includes("@gmail.com")){
+        if(checkmail.endsWith("@gmail.com")){
         if(/[A-Z]/.test(checkpassword) && /[a-z]/.test(checkpassword)){
         if(checkpassword.includes("@") || checkpassword.includes("#") || checkpassword.includes("$")){
         //   localStorage.setItem("emailData",checkmail)

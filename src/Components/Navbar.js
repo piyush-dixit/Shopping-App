@@ -30,6 +30,13 @@ const indb2=()=>{
 const totalorder=()=>{
   navigate("/Order")
 }
+
+// var d = new Date();
+// var dd = String(d.getDate()).padStart(2, '0');
+// var mm = String(d.getMonth() + 1).padStart(2, '0'); //January is 0!
+// var yyyy = d.getFullYear();
+
+// d = mm + '/' + dd + '/' + yyyy;
   return (
     <>
     <div className="striky">
@@ -37,7 +44,7 @@ const totalorder=()=>{
    <nav className="navbar navbar-expand-lg bg-body-tertiar">
   <div className="container-fluid">
     {localStorage.getItem("emailData")!==null ? <Link className="navbar-brand cart" to="/">Shopping-App</Link> :<Link className="navbar-brand cart" to="/">Shopping-App</Link>}
-    
+    {/* <p>{d}</p> */}
    
  <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{textAlign:'center'}}>
  {localStorage.getItem("logincheck")!==null?  <li><button  type="button"className="button mx-3"onClick={outdb}><span>LogOut</span></button></li>
@@ -47,7 +54,7 @@ const totalorder=()=>{
 }
 </ul>
      </div>
-     {/* {Selector} */}
+    
 
  <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{textAlign:'center'}}>
   {localStorage.getItem("logincheck")===null ?   <img alt="" src="/home/piyush/shopping-app/src/Photos/icons8-add-shopping-cart-30.png"  />
