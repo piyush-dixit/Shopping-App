@@ -1,5 +1,5 @@
 import React from 'react'
-import ice1 from "../Photos/ICE1.jpeg"
+import ice1 from "../Photos/ice1.jpeg"
 import ice2 from "../Photos/ice2.jpeg"
 import ice3 from "../Photos/ICE5.jpeg"
 import ice4 from "../Photos/ICE4.jpeg"
