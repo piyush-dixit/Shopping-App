@@ -1,8 +1,8 @@
 import React from 'react'
-import food1 from "/home/piyush/shopping-app/src/Photos/food1.jpeg"
-import food2 from "/home/piyush/shopping-app/src/Photos/food2.jpeg"
-import food3 from "/home/piyush/shopping-app/src/Photos/food3.jpeg"
-import food4 from "/home/piyush/shopping-app/src/Photos/food4.jpeg"
+import food1 from "../Photos/food1.jpeg"
+import food2 from "../Photos/food2.jpeg"
+import food3 from "../Photos/food3.jpeg"
+import food4 from "../Photos/food4.jpeg"
 import { useDispatch ,useSelector} from 'react-redux';
 import { useState } from 'react';
 // import { useDispatch } from 'react-redux'

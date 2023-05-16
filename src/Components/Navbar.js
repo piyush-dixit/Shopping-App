@@ -57,7 +57,7 @@ const totalorder=()=>{
     
 
  <ul className="navbar-nav me-auto mb-2 mb-lg-0" style={{textAlign:'center'}}>
-  {localStorage.getItem("logincheck")===null ?   <img alt="" src="/home/piyush/shopping-app/src/Photos/icons8-add-shopping-cart-30.png"  />
+  {localStorage.getItem("logincheck")===null ?   <img alt="" src="../Photos/icons8-add-shopping-cart-30.png"  />
  :<>
  <li style={{textAlign:'center'}}><h6  style={{textAlign:'center',margin: '7% -16% 0% -139%'}}>Email Id: {Selector}</h6></li>
   <li><button className="button"  onClick={totalorder}><span>items :{Selector2}</span></button></li>

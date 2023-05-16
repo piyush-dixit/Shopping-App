@@ -1,14 +1,14 @@
 import React from 'react'
-import frt from "/home/piyush/shopping-app/src/Photos/frt1.jpg"
-import veg from "/home/piyush/shopping-app/src/Photos/foood.jpg"
-import food from "/home/piyush/shopping-app/src/Photos/fd2.jpg"
+import frt from "../Photos/frt1.jpg"
+import veg from "../Photos/foood.jpg"
+import food from "../Photos/fd2.jpg"
 
-import ice from "/home/piyush/shopping-app/src/Photos/ice2.jpeg"
-import swip1 from "/home/piyush/shopping-app/src/Photos/swip1.jpg"
-import swip2 from "/home/piyush/shopping-app/src/Photos/swip2.jpg"
-import swip3 from "/home/piyush/shopping-app/src/Photos/swip6.jpg"
-import swip4 from "/home/piyush/shopping-app/src/Photos/swip4.jpg"
-import swip5 from "/home/piyush/shopping-app/src/Photos/swip5.jpeg"
+import ice from "../Photos/ice2.jpeg"
+import swip1 from "../Photos/swip1.jpg"
+import swip2 from "../Photos/swip2.jpg"
+import swip3 from "../Photos/swip6.jpg"
+import swip4 from "../Photos/swip4.jpg"
+import swip5 from "../Photos/swip5.jpeg"
 import { Link } from 'react-router-dom'
 // Import Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';

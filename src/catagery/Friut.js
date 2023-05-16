@@ -1,8 +1,8 @@
 import React from 'react'
-import fruit1 from "/home/piyush/shopping-app/src/Photos/FRT1.jpeg"
-import fruit2 from "/home/piyush/shopping-app/src/Photos/FRT2.jpeg"
-import fruit3 from "/home/piyush/shopping-app/src/Photos/FRT3.jpeg"
-import fruit4 from "/home/piyush/shopping-app/src/Photos/FRT4.jpeg"
+import fruit1 from "../Photos/FRT1.jpeg"
+import fruit2 from "../Photos/FRT2.jpeg"
+import fruit3 from "../Photos/FRT3.jpeg"
+import fruit4 from "../Photos/FRT4.jpeg"
 import { useState } from 'react'
 import { Dispatch } from 'react'
 // import { useDispatch } from 'react-redux'

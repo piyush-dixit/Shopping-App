@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useDispatch ,useSelector} from 'react-redux';
 import { Addcart } from '../Store/Info'
-import Veg1 from "/home/piyush/shopping-app/src/Photos/veg1.jpeg"
-import Veg2 from "/home/piyush/shopping-app/src/Photos/veg2.jpeg"
-import Veg3 from "/home/piyush/shopping-app/src/Photos/veg3.jpeg"
-import Veg4 from "/home/piyush/shopping-app/src/Photos/veg4.jpeg"
+import Veg1 from "../Photos/veg1.jpeg"
+import Veg2 from "../Photos/veg2.jpeg"
+import Veg3 from "../Photos/veg3.jpeg"
+import Veg4 from "../Photos/veg4.jpeg"
 
 
 export default function Veg() {

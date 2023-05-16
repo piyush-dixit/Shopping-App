@@ -1,5 +1,5 @@
 import React from 'react'
-import orderpic from "/home/piyush/shopping-app/src/Photos/order2.jpg"
+import orderpic from "../Photos/order2.jpg"
 import { useNavigate } from 'react-router-dom'
 import { useDispatch ,useSelector} from 'react-redux';
 import { Addcart } from '../Store/Info';

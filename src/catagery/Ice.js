@@ -1,8 +1,8 @@
 import React from 'react'
-import ice1 from "/home/piyush/shopping-app/src/Photos/ICE1.jpeg"
-import ice2 from "/home/piyush/shopping-app/src/Photos/ICE2.jpeg"
-import ice3 from "/home/piyush/shopping-app/src/Photos/ICE5.jpeg"
-import ice4 from "/home/piyush/shopping-app/src/Photos/ICE4.jpeg"
+import ice1 from "../Photos/ICE1.jpeg"
+import ice2 from "../Photos/ice2.jpeg"
+import ice3 from "../Photos/ICE5.jpeg"
+import ice4 from "../Photos/ICE4.jpeg"
 import { useState } from 'react';
 import { useDispatch ,useSelector} from 'react-redux';
 import { Addcart } from '../Store/Info';

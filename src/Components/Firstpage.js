@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
-import shop from "/home/piyush/shopping-app/src/Photos/shop page.jpg"
+import shop from "../Photos/shop page.jpg"
 
 export default function Firstpage() {
     const navigate=useNavigate()
