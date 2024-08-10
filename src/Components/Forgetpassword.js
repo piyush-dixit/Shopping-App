@@ -11,8 +11,8 @@ export default function Forgetpassword() {
     event.preventDefault()
      if (checkmail.length > 0 && checkmail===selector) {
         alert("Keep smile Your Password is save  :");
-        navigate("/Resetpassword");
-       }else {
+       navigate("/Resetpassword");
+              }else {
         alert("Email Does Not Exist");
       }
     }
